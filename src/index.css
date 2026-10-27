@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-emerald: #145A45;
+    --color-deep-green: #0B382D;
+    --color-warm-ivory: #FBF7ED;
+    --color-champagne-gold: #D6B66C;
+    --color-soft-cream: #F2EBDD;
+    --color-main-text: #24352F;
+  }
+
+  body {
+    background-color: var(--color-warm-ivory);
+    color: var(--color-main-text);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Islamic calligraphy font */
+  .font-arabic {
+    font-family: 'Amiri', serif;
+  }
+
+  /* Serif display for elegant invitation titles */
+  .font-serif-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Islamic Geometric Background Pattern */
+.bg-islamic-pattern {
+  background-color: #0B382D;
+  background-image: radial-gradient(#D6B66C 0.75px, transparent 0.75px), radial-gradient(#D6B66C 0.75px, #0B382D 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.08;
+}
+
+.bg-ivory-pattern {
+  background-color: #FBF7ED;
+  background-image: radial-gradient(#D6B66C 0.6px, transparent 0.6px);
+  background-size: 24px 24px;
+}
+
+/* Subtle Golden Shimmer */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(214, 182, 108, 0.1) 0%,
+    rgba(214, 182, 108, 0.4) 50%,
+    rgba(214, 182, 108, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Floating Lantern Keyframes */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(7px) rotate(-1.5deg);
+  }
+}
+
+.animate-float-reverse {
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+/* Pulse glow for gold seal */
+@keyframes sealGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(214, 182, 108, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(214, 182, 108, 0.8), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.animate-seal-glow {
+  animation: sealGlow 2.5s infinite ease-in-out;
+}
+
+/* Custom scrollbar for letter */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EBDD;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6B66C;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #145A45;
+}

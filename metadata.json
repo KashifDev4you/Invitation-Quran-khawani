@@ -1,0 +1,6 @@
+{
+  "name": "Quran Khawani Invitation",
+  "description": "An interactive personalized Quran Khawani surprise invitation experience featuring an animated envelope reveal and event details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
