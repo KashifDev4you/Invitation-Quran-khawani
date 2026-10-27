@@ -26,7 +26,7 @@ export const EVENT_CONFIG: EventConfig = {
   formattedDate: 'Sunday, 1 November 2026',
   time: '12:30 PM',
   formattedTime: '12:30 PM PKT',
-  venue: 'V697+MXX, R-545 Makki Mohalla, Samo Goth, Gadap Town, Karachi, Pakistan',
+  venue: 'V698+M47 Samo Goth, Gadap Town, Karachi, Pakistan',
   host: 'Muhammad Azam',
   purpose: 'General Quran Khawani',
   timezone: 'Asia/Karachi',
